@@ -46,7 +46,7 @@ class Student(AbstractPerson):
 
 class Mentor(AbstractPerson):
     main_work = models.CharField(max_length=50, null=True, blank=True)
-    experience = models.DateField()
+    experience = models.IntegerField()
     students = models.ManyToManyField(Student, through='Course')
 
     def __str__(self):
@@ -63,8 +63,8 @@ class Course(models.Model):
     def __str__(self):
         return self.name
 
-    # def get_end_date(self):
-    #     end_date = self.date_started + timedelta(days=30*self.language.month_to_learn)
+    def get_end_date(self):
+        end_date = self.date_started + timedelta(days=30*self.language.month_to_learn)
 
 
 

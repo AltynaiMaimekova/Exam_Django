@@ -20,6 +20,6 @@ m1 = Mentor.objects.create(name='Ilona Maskova', email='imask@gmail.com', phone_
 m2 = Mentor.objects.create(name='Halil Nurmuhametov', email='halil@gmail.com', phone_number='0709989876',
                            main_work='University of Fort Collins', experience=12)
 
-c1 = Course.objects.create(name='Python-21', language=l1, date_started='1-8-2022', mentor=m2, student=s1)
-c2 = Course.objects.create(name='Python-21', language=l1, date_started='1-8-2022', mentor=m2, student=s2)
-c2 = Course.objects.create(name='UXUI design-43', language=l3, date_started='22-8-2022', mentor=m1, student=s3)
+c1 = Course.objects.create(name='Python-21', language=l1, date_started='2022-8-1', mentor=m2, student=s1)
+c2 = Course.objects.create(name='Python-21', language=l1, date_started='2022-8-1', mentor=m2, student=s2)
+c2 = Course.objects.create(name='UXUI design-43', language=l3, date_started='2022-8-22', mentor=m1, student=s3)
